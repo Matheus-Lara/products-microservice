@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "5f902c33-d957-4c43-ae2f-09919ac28161",
+		"name": "products-microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16537774"
+	},
+	"item": [
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{productsBaseUrl}}",
+					"host": [
+						"{{productsBaseUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigo\": 0,\n    \"nome\": \"Console PlayStation 5\",\n    \"desc\": \"\",\n    \"preco\": 4500\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{productsBaseUrl}}",
+					"host": [
+						"{{productsBaseUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{productsBaseUrl}}/:id",
+					"host": [
+						"{{productsBaseUrl}}"
+					],
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "634748e74d0b4c001d56a565"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigo\": 0,\n    \"nome\": \"Console PlayStation 5\",\n    \"desc\": \"Console PS5 com 2 controles\",\n    \"preco\": 4500\n}"
+				},
+				"url": {
+					"raw": "{{productsBaseUrl}}/:id",
+					"host": [
+						"{{productsBaseUrl}}"
+					],
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "634748e74d0b4c001d56a565"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{productsBaseUrl}}/:id",
+					"host": [
+						"{{productsBaseUrl}}"
+					],
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6347449f1c0d92001debe223"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
