@@ -25,9 +25,14 @@ You can also use the docker VSCode extension to check if the containers are up:
 
 ![image](https://user-images.githubusercontent.com/63257275/196007698-6f2a4f62-ba31-4516-8eeb-9961c9eace61.png)
 
-### Testing the api
+If you want to stop all the containers, simply run `docker compose down` into the root folder, you will see the output below:
 
-to test the API you have two possible ways:
+![image](https://user-images.githubusercontent.com/63257275/196007957-4115a400-c334-40d1-909f-60dcb239ff57.png)
+
+
+### Testing the API
+
+There are two possible ways to test the API:
 
 1) Check `server,js` to verify the available endpoints and `model/product.model.js` to check the required schema for POST/PUT requests
 
