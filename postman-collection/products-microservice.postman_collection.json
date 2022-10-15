@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "5f902c33-d957-4c43-ae2f-09919ac28161",
+		"_postman_id": "45d9ef46-c2f7-4a9b-b757-a227659129db",
 		"name": "products-microservice",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16537774"
+		"_exporter_id": "13501952"
 	},
 	"item": [
 		{
@@ -127,6 +127,12 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "productsBaseUrl",
+			"value": "http://localhost:3081"
 		}
 	]
 }
