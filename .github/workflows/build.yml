@@ -2,7 +2,7 @@ name: Create and publish docker image into registry
 
 on:
   push:
-    branches: ['release']
+    branches: ['latest']
 
 env:
   REGISTRY: ghcr.io
